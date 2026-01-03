@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+Project Dashboard
+Current Stage
+{% for stage in project.stages.all %} {{ stage.name }} {% endfor %}
+Tasks
+{% for task in project.tasks.all %}
+{{ task.title }}
+{% endfor %}
+Change Requests
+{% for request in project.change_requests.all %}
+{{ request.description }}
+Priority: {{ request.priority }} | Status: {{ request.status }}
+{% endfor %}
+{% endblock %}

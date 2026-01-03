@@ -1,0 +1,50 @@
+# Environment variables
+.env
+frontend/.env
+backend/.env
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+backend/venv/
+
+# Docker
+*.log
+
+# Python/Django
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.env
+db.sqlite3  # If using SQLite fallback; ignore if pure PostgreSQL
+migrations/  # Optional: If you don't want to commit migrations yet
+
+# Svelte/Node.js
+node_modules/
+.svelte-kit/
+.pnpm-lock.yaml
+yarn.lock  # If using Yarn
+package-lock.json  # If using npm
+
+# PostgreSQL/Database
+*.sql  # Ignore raw SQL dumps unless intentional
+pgdata/  # If you have local Postgres data folders
+
+# General
+.DS_Store  # macOS junk
+Thumbs.db  # Windows junk
+*.log
+tmp/
+temp/
